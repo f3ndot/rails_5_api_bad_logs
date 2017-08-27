@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
   def show
-    render json: 'welcome!'
+    logger.info "Oh hey this is a test"
+    render json: { message: 'welcome!' }
   end
 end
